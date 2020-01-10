@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+      <li><a href="4.html">Internet</a></li>
+    </ol>
+
+  <h1>HTML</h1>
+
+  <h2>1. HTML이란?</h2>
+  <p>html은 <a href="https://www.w3.org/TR/html52/">hypertext markup language</a>의 약자로,
+  <strong>creating <u>web</u> pages</strong> and
+  web applications를 표현하는 주된 언어. <br></p>
+
+  <h3> 1.1 웹을 지배하는 가장 중요한 문법</h3>
+  <strong> → TAG</strong> <br>
+    <h4>  1.1.1 일반 태그</h4>
+    여는 태그와 닫는 태그로 이루어져 있다. <br>
+
+    <h4>  1.1.2 닫지 않는 태그</h4>
+    무엇인가를 설명하지 않는 태그는 감싸야 하는 컨텐츠가 없다. 그래서 닫지 않는다는 규칙.<br>
+    예) img, input, br, hr, meta 등.<br>
+
+    <h4>  1.1.3 Paragraph</h4>
+    <p>문단을 표현하는 태그는 하나의 단락을 그룹핑 할 수 있도록
+    열고 닫는 태그가 존재한다.<br>
+    br이 줄바꿈만을 의미하는 태그라면,
+    p태그는 하나의 단락으로 묶어주는 역할을 한다.<br>
+    다만, 단락 간 간격이 고정되어 있으므로 시각적 자유도는 떨어지는 편.<br>
+    But! CSS라는 기술이 있다. html과 다른 문법을 가진 언어인데, 정보를 꾸며준다.
+    (html은 정보를 표현하는 언어)  </p> <br>
+    다시말하면, <br>
+      <p style="margin-top:45px;">
+      p 태그에 style="margin-top:45px" 추가하면 여백 생김.(CSS)<br>
+      p태그를 통해 단락의 경계를 분명히 하면서 CSS를 사용한 p태그 디자인을
+      자유롭게 변경할 수 있기 때문에 br태그보다는 p태그가 더 좋은 선택.</p>
+      <br>
+
+      <h4>  1.1.4 통계에 기반한 학습</h4>
+      <p>태그는 150개 이상.
+      혁명적 변화(인터넷)로 태그가 무엇인지 알고 있다면
+      태그를 검색해서 다 쓸 수 있음.<br>
+      http://www.advancedwebranking.com/html/<br>
+      <img src="webranking.png" width="100%">
+      frequency를 통계로 보고 많이 쓰이는 태그가 뭔지 알 수 있음
+      어려운 게 뒤에 나오는 것이 아니라 응용하기 어려운 것이 뒤에 오는 것.</p>
+      <br>
+
+    <h2>일반인의 타이틀과 지식인의 타이틀</h2>
+    source에서 차이가 난다.
+
+
+<h3> 1.2 HTML의 중요성</h3>
+  <p style="margine-top:30px;"> 웹의 핵심 철학은 접근성(accessibility).<br>
+  웹은 모든 운영체계에서 동작하고, 웹의 소스코드는 누구나 볼 수 있고,
+  웹은 저작권 없는 순수 공공재.(다른 기술들과의 차별성)<br>
+  HTML을 의미론적으로 잘 사용한다면 소외되는 사람 없이 누구나 접근가능함.
+  </p>
+  <br>
+
+
+<br>
+<h2>2. 속성(attribute)</h2>
+<p>html의 기본문법을 완전히 마스터 한다!
+<br>아주 인기있는 태그 : img 태그 <br>
+이미지 태그를 사용한다고 하여 바로 나오는 것이 아니다. 왜?<br>
+어떤 이미지를 불러올 지에 대한 정보 부족. <br>
+새로운 문법 도입 : <strong>속성</strong></p>
+
+<p><img src="https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png">
+<br>여기서 속성은 src. https://이하는 이미지의 주소. <br>
+따라서 src라는 속성을 통해 이미지를 불러올 수 있게 된 것.</p>
+
+<p>내 컴퓨터에 있는 이미지를 표시하려면?<br>
+1. 이미지 파일을 웹페이지 파일과 같은 위치에 놓는다.<br>
+2. 이미지 파일의 이름을 src 속성의 값으로 적어준다.<br>
+예) img src = "la_mer.jpg" <br>
+<img src="la_mer.jpg"> <br>
+앗. 사이즈가 너무 크다. <br>
+width로 조정하자.(50%) <br>
+<img src="la_mer.jpg" width="50%"> <br>
+<br>
+100%는
+<img src="la_mer.jpg" width="100%">
+</p><br>
+
+
+<h2>3. 부모태그, 자식태그</h2>
+  <ol>
+    <li>li:리스트 태그</li>
+    <li>ul : unordered list</li>
+    <li>ol : ordered list</li>
+  </ol>
+li태그는 부모 태그인 ul태그가 항상 존재한다. 즉 li태그를 묶어 주기 위해 ul태그가 있음.
+<br>리스트 안에서 넘버링을 자동으로 하고 싶다면? ol태그.<br><br>
+연습 :
+<ul> unordered list 1.
+  <li>1. HTML</li>
+  <li>2. CSS</li>
+  <li>3. JavaScript</li>
+</ul>
+<ul> unordered list 2.
+  <li>Kyumin</li>
+  <li>Agnes</li>
+  <li>Park</li>
+</ul>
+
+<ol>ordered list
+  <li>html</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ol>
+<br>
+
+<h3>3.1 테이블</h3>
+테이블은 3대(table-tr-td)가 같이 다니는 태그. 리스트는 2대.<br>
+연습)<br>
+table 1.
+<table>
+  <tr>
+    <td>head</td>
+    <td>98.1%</td>
+  </tr>
+  <tr>
+    <td>body</td>
+    <td>95.4%</td>
+  </tr>
+  <tr>
+    <td>html</td>
+    <td>45.5%</td>
+  </tr>
+</table>
+<br>
+table 2.
+<table>
+  <tr>
+    <td>1행</td>
+    <td>1.446</td>
+    <td>1.5</td>
+  </tr>
+  <tr>
+    <td>2행</td>
+    <td>2.5454</td>
+    <td></td>
+    <td>2.8</td>
+  </tr>
+  <tr>
+    <td>3행</td>
+    <td>3.0</td>
+    <td>3.78</td>
+    <td>3.888</td>
+    <td>3.95422</td>
+  </tr>
+</table>
+<br>
+
+<h2>4. Superstars of Tags : 문서의 구조</h2>
+종류 : <strong>title, meta, body, head. </strong><br>
+title은 이 html파일의 이름,<br>
+meta는 이 html파일이 utf-8로 저장되었음을, <br>
+본문은 body태그로 묶기로 약속함. <br>
+body를 설명하는 태그는 head 태그로 묶어야. <br>
+최 고위층 태그가 html 태그.<br>
+<br> 이상으로 이 세상 모든 html소스의 구조를 배웠음. <br>
+
+<h2> 5. HTML태그의 제왕 </h2>
+Question. 태그가 웹의 왕국이라면, <strong>이 태그</strong>는 이 왕국의 제왕. <br>
+현대 html은 150여개의 태그로 이루어져 있지만, 모든 태그는 <strong>이 태그</strong> 밑에 있다.<br>
+<strong>이 태그</strong>는 어떤 태그인가?
+<br>전 세계 검색엔진들은 <strong>이 태그</strong> 덕분에 전 세계 웹을 항해하면서 웹페이지 발견, 최고의 검색 결과를 만들 수 있었다.
+<br> ☞ <strong>a 태그</strong>. a는 Hypertext를 의미.
+<br>
+
+
+</body>
